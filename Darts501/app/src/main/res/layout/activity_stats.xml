@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64FF64"
+    tools:context=".Stats" >
+
+    <TextView
+        android:id="@+id/Gewinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_gewinner"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MitteRechts"
+        app:layout_constraintTop_toBottomOf="@+id/Spieler2" />
+
+    <TextView
+        android:id="@+id/Gewinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_gewinner"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/MitteRechts"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks"
+        app:layout_constraintTop_toBottomOf="@+id/Spieler1" />
+
+    <TextView
+        android:id="@+id/Spieler2Darts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_Platz"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/DartsZwischen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MitteRechts"
+        app:layout_constraintTop_toBottomOf="@+id/AvgDarts" />
+
+    <TextView
+        android:id="@+id/Spieler1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spieler_1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/SpielerAvg"
+        app:layout_constraintEnd_toStartOf="@+id/MitteRechts"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Spieler2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spieler_2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/SpielerAvg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MitteRechts"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/MitteRechts"
+        android:layout_width="7dp"
+        android:layout_height="729dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ZwischenRematch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks" />
+
+    <View
+        android:id="@+id/MitteLinks"
+        android:layout_width="7dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ZwischenRematch"
+        app:layout_constraintEnd_toStartOf="@+id/Spieler1Avg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/SpielerAvg"
+        android:layout_width="409dp"
+        android:layout_height="7dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/AvgDarts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/AvgDarts"
+        android:layout_width="409dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="171dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/DartsZwischen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/DartsZwischen"
+        android:layout_width="409dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="140dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ZwischenRematch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/ZwischenRematch"
+        android:layout_width="409dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="100dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Spieler1Avg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_Platz"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/AvgDarts"
+        app:layout_constraintEnd_toStartOf="@+id/MitteRechts"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks"
+        app:layout_constraintTop_toBottomOf="@+id/SpielerAvg" />
+
+    <TextView
+        android:id="@+id/Spieler2Avg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_Platz"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/AvgDarts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MitteRechts"
+        app:layout_constraintTop_toBottomOf="@+id/SpielerAvg" />
+
+    <TextView
+        android:id="@+id/Spieler1Darts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_Platz"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/DartsZwischen"
+        app:layout_constraintEnd_toStartOf="@+id/MitteRechts"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks"
+        app:layout_constraintTop_toBottomOf="@+id/AvgDarts" />
+
+    <Button
+        android:id="@+id/button_Rematch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/_Rematch"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ZwischenRematch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Avg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_AVG"
+        app:layout_constraintBottom_toTopOf="@+id/AvgDarts"
+        app:layout_constraintEnd_toStartOf="@+id/MitteLinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpielerAvg" />
+
+    <TextView
+        android:id="@+id/Darts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_Darts"
+        app:layout_constraintBottom_toBottomOf="@+id/DartsZwischen"
+        app:layout_constraintEnd_toStartOf="@+id/MitteLinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgDarts" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="133dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toTopOf="@+id/ZwischenRematch"
+        app:layout_constraintEnd_toStartOf="@+id/MitteRechts"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/MitteLinks"
+        app:layout_constraintTop_toBottomOf="@+id/DartsZwischen"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/baustell" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/ZwischenRematch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/MitteRechts"
+        app:layout_constraintTop_toBottomOf="@+id/DartsZwischen"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/baustell" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

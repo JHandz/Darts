@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Darts501</string>
+    <string name="darts501">Darts501</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="clear">clear</string>
+    <string name="ok">OK</string>
+    <string name="spieler_2">Spieler 2</string>
+    <string name="spieler_1">Spieler 1</string>
+    <string name="_501">501</string>
+    <string name="_gewinner">Gewinner!!</string>
+    <string name="_pfeil2">[]</string>
+    <string name="_pfeil1">[]</string>
+    <string name="_RCK">RCK</string>
+    <string name="_AVG">Average:</string>
+    <string name="_Darts">Darts:</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="_Platz">PLATZHALTER</string>
+    <string name="_Rematch">REMATCH!!!</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Washing">WaShInG</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

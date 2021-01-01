@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#707070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/text_spieler2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginLeft="91dp"
+            android:background="#707070"
+            android:text="@string/spieler_2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/Feld_Spieler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_spieler"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_spieler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spieler_1"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/Feld_Spieler"
+            app:layout_constraintEnd_toStartOf="@+id/text_spieler2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
+        <View
+            android:id="@+id/Eingabe_Feld"
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_marginTop="160dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.459" />
+
+        <Button
+            android:id="@+id/button_score_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            app:layout_constraintBottom_toTopOf="@+id/button_clear"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Eingabe_Feld" />
+
+        <Button
+            android:id="@+id/button_score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_4"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_2"
+            app:layout_constraintStart_toEndOf="@+id/button_score_0"
+            app:layout_constraintTop_toBottomOf="@+id/Eingabe_Feld" />
+
+        <Button
+            android:id="@+id/button_score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_5"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_3"
+            app:layout_constraintStart_toEndOf="@+id/button_score_1"
+            app:layout_constraintTop_toBottomOf="@+id/Eingabe_Feld" />
+
+        <Button
+            android:id="@+id/button_score_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_score_2"
+            app:layout_constraintTop_toBottomOf="@+id/Eingabe_Feld" />
+
+        <Button
+            android:id="@+id/button_score_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_7"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_5"
+            app:layout_constraintStart_toEndOf="@+id/button_clear"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_1" />
+
+        <Button
+            android:id="@+id/button_score_5"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_5"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_8"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_6"
+            app:layout_constraintStart_toEndOf="@+id/button_score_4"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_2" />
+
+        <Button
+            android:id="@+id/button_score_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_6"
+            app:layout_constraintBottom_toTopOf="@+id/button_score_9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_score_5"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_3" />
+
+        <Button
+            android:id="@+id/button_score_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_8"
+            app:layout_constraintStart_toEndOf="@+id/button_OK"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_4" />
+
+        <Button
+            android:id="@+id/button_score_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_9"
+            app:layout_constraintStart_toEndOf="@+id/button_score_7"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_5" />
+
+        <Button
+            android:id="@+id/button_score_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_score_8"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_6" />
+
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:textColor="#EF0A0A"
+            android:textColorLink="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/button_OK"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_score_0" />
+
+        <Button
+            android:id="@+id/button_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="#4CAF50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_score_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_clear" />
+
+        <View
+            android:id="@+id/Feld_Spieler"
+            android:layout_width="409dp"
+            android:layout_height="7dp"
+            android:layout_marginBottom="300dp"
+            android:background="#050505"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/Pfeil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_pfeil2"
+            android:textColor="#00FF00"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/Feld_Spieler"
+            app:layout_constraintEnd_toStartOf="@+id/text_spieler2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Pfeil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/_pfeil1"
+            android:textColor="#00FF00"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/Feld_Spieler"
+            app:layout_constraintStart_toEndOf="@+id/text_spieler"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Player1Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_Platz"
+            android:textColor="#FF0000"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toStartOf="@+id/Player2Left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Feld_Spieler" />
+
+        <TextView
+            android:id="@+id/Player2Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_Platz"
+            android:textColor="#FF0000"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Player1Left"
+            app:layout_constraintTop_toBottomOf="@+id/Feld_Spieler" />
+
+        <TextView
+            android:id="@+id/CurrentScore"
+            android:layout_width="103dp"
+            android:layout_height="26dp"
+            android:background="#FFFFFF"
+            android:text="@string/_0"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/Mittenspalter"
+            android:layout_width="7dp"
+            android:layout_height="729dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/CurrentScore"
+            app:layout_constraintEnd_toStartOf="@+id/Pfeil2"
+            app:layout_constraintStart_toEndOf="@+id/Pfeil1" />
+
+        <Button
+            android:id="@+id/button_rck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_RCK"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toStartOf="@+id/CurrentScore"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_washing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Washing"
+            app:layout_constraintBottom_toTopOf="@+id/Eingabe_Feld"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CurrentScore" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
