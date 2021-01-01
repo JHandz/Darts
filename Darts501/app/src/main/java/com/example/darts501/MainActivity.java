@@ -320,7 +320,7 @@ public class MainActivity extends AppCompatActivity {
                 cnt = History.push((int) 0); // cnt = cnt, bloß, dass cnt gepusht wird
             }else if (Score == 0) {
                 sieger = 2;
-                //Player2EditScore.setText(Integer.toString(Score));
+
                 cnt = History.push(cnt);
                 SwitchScreen();
             } else {
@@ -345,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
             int resID=getResources().getIdentifier(nameofmp3, "raw", getPackageName());
             mediaPlayer = MediaPlayer.create(getApplicationContext(), resID);
             mediaPlayer.start();
-            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){ // eigentlich muss der mediaPlayer noch irgendwie gelöscht werden!!
                     @Override
                     public void onCompletion(MediaPlayer mp) {
                         if(cnt >= 100 && Score == 0) {
